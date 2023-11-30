@@ -1,5 +1,15 @@
 function appendToDisplay(value) {
-  document.getElementById("display").value += value;
+  if(value == '+' ||value == '-'||value == '*'||value == '/'){
+    const displayValue = document.getElementById("display").value
+    const currentCh = displayValue.at(-1)
+    if(currentCh == "+"||currentCh == "-"||currentCh == "*"||currentCh == "/"){
+      return alert("Multiple Oparator not allow")
+    }else{
+      document.getElementById("display").value += value;
+    }
+  }else{
+    document.getElementById("display").value += value;
+  }
 }
 
 function clearDisplay() {
