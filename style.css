@@ -61,7 +61,7 @@ input[type="text"]:focus {
   box-shadow: 3px 3px 3px #17181c, -3px -3px 3px #676e7e;
 }
 .button:active,
-.button:focus {
+.button:focus, .button:hover {
   box-shadow: inset 3px 3px 3px #17181c, inset -3px -3px 3px #676e7e;
 }
 .equal-btn {
